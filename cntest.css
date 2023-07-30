@@ -1,0 +1,595 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.logo {
+    width: 122px;
+    height: 89px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: -6px;
+}
+
+.navbar {
+    margin-left: 30px;
+    margin-right: 170px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.wholebar {
+    z-index: 6;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 97px;
+    z-index: 6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid rgba(214, 17, 6, 0.881);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navList {
+    flex-direction: row;
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    background: none;
+}
+
+.navList a {
+    text-decoration-color: #ffe512;
+    font-size: 18px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#test2 {
+    padding: 10px 10px;
+    /* background-color: #fe8b3efc; */
+    background-color: #ffe512;
+
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnst {
+    margin-bottom: 15px;
+}
+
+.btnst a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.item {
+    margin-right: 50px;
+    margin-top: 30px;
+    border: none;
+    /* background-color: white; */
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3px;
+}
+
+.item a:hover {
+    border-bottom: 2px solid #ffaf00;
+    transition: border-bottom cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #efefef;
+    padding: 1rem 1rem;
+}
+
+.fill1 {
+    background-color: #fff;
+    width: 560px;
+    height: 690px;
+    margin-left: 450px;
+    display: none;
+    overflow-y: scroll;
+    border-radius: 13px;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    position: fixed;
+}
+
+.fill2 {
+    background-color: #fff;
+    width: 560px;
+    height: 690px;
+    margin-left: 450px;
+    display: none;
+    overflow-y: scroll;
+    border-radius: 13px;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    position: fixed;
+}
+
+/* book */
+.fill-nav1 {
+    width: 546.5px;
+    position: fixed;
+    padding-right: 12px;
+    z-index: 20;
+    height: 101px;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fea700;
+    place-content: center;
+    border-radius: -1px;
+    align-content: center;
+}
+
+.fill-nav1 h2 {
+    text-align: center;
+    color: #9b9b9b;
+    margin-bottom: 0.28571rem;
+    letter-spacing: 1px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.fill-nav1 h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Playfair Display, Lato, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000111;
+}
+
+/* what to look for */
+.fill-nav2 {
+    width: 546.5px;
+    position: fixed;
+    padding-right: 12px;
+    z-index: 20;
+    height: 101px;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fea700;
+    place-content: center;
+    border-radius: -1px;
+    align-content: center;
+}
+
+.fill-nav2 h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: Playfair Display, Lato, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000111;
+}
+
+
+.overflow1 {
+    padding: 20px;
+    justify-content: center;
+}
+
+.overflow1 h1 {
+    margin-bottom: 41px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overflow1 label {
+    display: block;
+    font-weight: 400;
+    margin-top: 18.2px;
+    text-transform: capitalize;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+.overflow1 label.required:after {
+    content: "*";
+    position: relative;
+    display: inline-block;
+    margin-left: 1px;
+    color: #e66c6c;
+    font-size: 12px;
+    top: -1px;
+}
+
+.overflow1 input[type="text"],
+.overflow1 input[type="email"],
+.moverflow1 textarea {
+    width: 90%;
+    padding: 12px 1.14286rem 13px;
+    margin-top: -10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    margin-left: 17px;
+    font-size: 15.5px;
+    appearance: none;
+    background: #fed501;
+    /* outline: 1px solid transparent; */
+}
+
+.overflow1 input[type="email"] {
+    width: 90%;
+}
+
+.overflow1 textarea {
+    min-height: 8rem;
+    padding: 12px;
+    width: 90%;
+    margin-left: 17px;
+    border-radius: 4px;
+    border: 1px solid #e2e0dd;
+    margin-top: -11px;
+    margin-bottom: 25px;
+}
+
+.overflow1 select {
+    width: 100%;
+    padding: 12px 1.14286rem 13px;
+    margin-top: 5px;
+    border: 1px solid#d8d8d8;
+    border-radius: 4px;
+}
+
+.overflow1 .form-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.overflow1 .form-buttons button {
+    padding: 18px 33px;
+    font-size: 26px;
+    font-weight: bold;
+    background: #ff7300;
+    color: #fff;
+    border-radius: 3px;
+    font-size: .85714rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all .2s ease;
+}
+
+.overflow1 .form-buttons button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.1px;
+}
+
+/* whatwe look for */
+.overflow2 {
+    padding: 20px;
+    justify-content: center;
+}
+
+.overflow2 h1 {
+    margin-bottom: 41px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.overflow2 label {
+    display: block;
+    font-weight: 400;
+    margin-top: 18.2px;
+    text-transform: capitalize;
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+.overflow2 label.required:after {
+    content: "*";
+    position: relative;
+    display: inline-block;
+    margin-left: 1px;
+    color: #e66c6c;
+    font-size: 12px;
+    top: -1px;
+}
+
+.overflow2 input[type="text"],
+.overflow2 input[type="email"],
+.moverflow2 textarea {
+    width: 90%;
+    padding: 12px 1.14286rem 13px;
+    margin-top: -10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    margin-left: 17px;
+    font-size: 15.5px;
+    appearance: none;
+    background: #fed501;
+    /* outline: 1px solid transparent; */
+}
+
+.overflow2 input[type="email"] {
+    width: 90%;
+}
+
+.overflow2 textarea {
+    min-height: 8rem;
+    padding: 12px;
+    width: 90%;
+    margin-left: 17px;
+    border-radius: 4px;
+    border: 1px solid #e2e0dd;
+    margin-top: -11px;
+    margin-bottom: 25px;
+}
+
+.overflow2 select {
+    width: 100%;
+    padding: 12px 1.14286rem 13px;
+    margin-top: 5px;
+    border: 1px solid#d8d8d8;
+    border-radius: 4px;
+}
+
+.overflow2 .form-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.overflow2 .form-buttons button {
+    padding: 18px 33px;
+    font-size: 26px;
+    font-weight: bold;
+    background: #ff7300;
+    color: #fff;
+    border-radius: 3px;
+    font-size: .85714rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all .2s ease;
+}
+
+.overflow2 .form-buttons button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.1px;
+}
+
+/* njnxw */
+/* land details start */
+
+
+.filterline {
+    color: #928f8f;
+}
+
+.crossbutton23 {
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    padding-left: 533px;
+    padding-top: 7px;
+}
+
+.crossbutton33 {
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    padding-left: 533px;
+    padding-top: 7px;
+}
+
+.cross {
+    width: 1px;
+    height: 20px;
+    background-color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 30;
+}
+
+.two {
+    transform: translateX(0px) rotate(45deg);
+}
+
+.one {
+    transform: rotate(-45deg);
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
+.filtering {
+    display: block;
+    margin-top: 31px;
+    z-index: 15;
+}
+
+.about-section {
+    margin-top: 37px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #9b9b9b;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    font-weight: 350;
+    /* margin-bottom: 10px; */
+}
+
+.about-heading {
+    color: black;
+    font-size: 41px;
+    font-weight: bold;
+    /* line-height: 1.5em; */
+    font-family: Playfair Display, Lato, sans-serif;
+    margin-top: 2px;
+
+}
+
+.contact-section {
+    margin-top: 76px;
+    display: table;
+    width: 100%;
+    /* table-layout: fixed; */
+    display: flex;
+    justify-content: center;
+}
+
+.left-section {
+    /* display: table-cell; */
+    flex-direction: column;
+    width: 40%;
+    vertical-align: top;
+    overflow: hidden;
+    padding-right: 49px;
+    margin-left: -56px;
+}
+
+.contra {
+    position: relative;
+    padding-top: 3px;
+    margin-bottom: 2rem;
+    background: #f8f8f9;
+}
+
+.contact-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 21px;
+    padding-top: 22px;
+}
+
+.contact-details {
+    background-color: transparent;
+    padding: 0px 40px;
+}
+
+.contact-details p {
+    margin: 23px 0;
+    font-size: 20px;
+    color: #9b9b9b;
+    padding-bottom: 10px;
+}
+
+.sp {
+    margin-left: 30px;
+    color: black;
+    font-size: 22px;
+}
+
+.sp1 {
+    margin-left: 105px;
+}
+
+right-section {
+    /* overflow: auto; */
+    /* padding-left: 13rem; */
+    width: 65%;
+    margin-left: 101px;
+}
+
+#frm1 {
+    background-color: rgb(255, 229, 18);
+    display: flex;
+    flex-direction: column;
+    padding: 1vmax 2vmax;
+    width: 80%;
+    min-width: 572px;
+    border-radius: 10px;
+}
+
+#frm1 h2 {
+    color: rgb(51, 32, 32);
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+#frm1 input {
+    border: 0;
+    margin: 10px 0;
+    padding: 25px;
+    outline: none;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+#frm1 textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 18px;
+    outline: none;
+    background-color: #fff;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+#frm1 button {
+    padding: 16px;
+    background: #ff5361;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 27px;
+    transition: opacity 200ms ease;
+}
+
+#frm1 button:hover {
+    font-size: 22px;
+}

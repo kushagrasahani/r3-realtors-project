@@ -1,0 +1,240 @@
+.logo {
+    width: 122px;
+    height: 89px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-left: 30px;
+    margin-right: 170px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.wholebar {
+    /* width: 1411px;
+    height: 133px; */
+    z-index: 6;
+    background-color: #fff;
+    position: relative;
+    /* border: 14px solid #ffe512;
+    margin: -6px; */
+    /* Outer border */
+    /* Outer border */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: 97px;
+    z-index: 6;
+    /* background-image: url(imgages/wallpaperflare-cropped.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid rgba(214, 17, 6, 0.881);
+}
+
+.navList {
+    flex-direction: row;
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: baseline;
+    text-align: center;
+    background: none;
+}
+
+.navList a {
+    text-decoration-color: #ffe512;
+    /* color: rgb(28, 27, 27); */
+    /* color: none; */
+    font-size: 18px;
+    color: black
+}
+
+#test2 {
+    padding: 10px 10px;
+    /* background-color: #fe8b3efc; */
+    background-color: #ffe512;
+
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnst {
+    margin-bottom: 15px;
+
+}
+
+.btnst a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+.item {
+    margin-right: 50px;
+    margin-top: 30px;
+    border: none;
+    /* background-color: white; */
+    text-align: center;
+    /* color: rgb(28, 27, 27); */
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .3px;
+}
+
+.item a:hover {
+    border-bottom: 2px solid #ffaf00;
+    transition: border-bottom cubic-bezier(0.175, 0.885, 0.32, 1.275) 200ms;
+    text-decoration: none;
+    color: black;
+}
+
+.logo1 {
+
+    width: 403px;
+    height: 307px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+
+.about-us-section {
+    background-color: #f8f8f9;
+    padding: 40px;
+}
+
+h5 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: #535d68;
+
+}
+
+.meet-team-heading {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* Remaining CSS code remains the same */
+.team-member-image {
+    margin-left: 46px;
+}
+
+.team-member-info {
+    display: flex;
+    align-items: center;
+}
+
+.team-member-image img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.team-member-details {
+    margin-left: 174px;
+    margin-top: -132px
+}
+
+.team-member-name {
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgb(0 0 0 / 80%);
+    margin-right: 20px;
+}
+
+.social-icons a:hover {
+    background-color: cyan;
+    scale: 1.7;
+}
+
+.icn {
+    color: #fff;
+    padding: 10px 11px;
+    scale: 1.2;
+}
+
+.designation {
+    font-size: 24px;
+    color: #888;
+    margin-top: 24px;
+}
+
+.contact-info {
+    margin-top: 28px;
+}
+
+.phone-icon,
+.email-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.phone-number {
+    font-size: 19px;
+    margin-right: 28px;
+    color: black;
+}
+
+.email {
+    font-size: 19px;
+    margin-right: 10px;
+    color: black;
+
+}
+
+.team-member-content {
+    margin-top: 40px;
+    line-height: 1.6;
+    margin-left: 42px;
+}
+
+.team-member-content p {
+    margin-bottom: 24px;
+    font-size: 19px;
+    color: black;
+}
+
+.dropdown-item {
+    padding: 0.25rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #efefef;
+    padding: 1.05rem 2.5rem;
+
+}

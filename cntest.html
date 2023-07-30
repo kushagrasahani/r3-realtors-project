@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Catamaran:wght@500&family=Inconsolata:wght@300&family=Josefin+Sans:wght@500&family=Lato&family=Montserrat:wght@600&family=Oswald&family=Raleway:ital,wght@1,800&family=Ysabeau+Infant:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Catamaran:wght@500&family=Inconsolata:wght@300&family=Josefin+Sans:wght@500&family=Lato&family=Montserrat:wght@600&family=Open+Sans:ital@1&family=Oswald&family=Raleway:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Catamaran:wght@500&family=Inconsolata:wght@300&family=Josefin+Sans:wght@500&family=Lato&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cntest.css">
+</head>
+
+<body>
+
+
+    <div class="container-fluid bg-white">
+
+        <div class="wholebar">
+            <div class="navbar">
+
+                <a href="#"><img src="imgages copy/test19.png" class="logo"></a>
+
+                <ul class="navList">
+                    <li><button onclick="location.href='index.html'" class="item"> <a href="#">Home</a> </button></li>
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                About us
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem;height:160px; padding: 1.5rem 0rem;  margin: 0.825rem 0 0; border-radius: 2px;">
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px; "
+                                    class="dropdown-item" href="index.html#aboubtUs">Why Us </a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item" href="teamsprev.html">Our Team</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                Buy
+                            </a>
+
+                            <div class="dropdown-menu dpmenu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem;padding: 1.5rem 1rem;  margin: 0.8249999999999993rem 0 0; border-radius: 2px;">
+                                <a style="font-size: 17px;
+                                font-family: 'Montserrat', sans-serif;
+                                margin-bottom: 3px;" class="dropdown-item all1" href="index.html#handlesearch4">All</a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item resi" href="index.html#handleSearch1">Residential</a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item hlan">House and Land</a>
+                                <a style="font-size: 14px; font-family: 'Montserrat', sans-serif; margin-bottom: 5px;margin-left: 15px; font-weight: 400;"
+                                    class="dropdown-item" id="hid1" href="index.html#handleSearch2">What We have</a>
+                                <a style="font-size: 14px; font-family: 'Montserrat', sans-serif; margin-bottom: 5px; margin-left: 15px; font-weight: 400;"
+                                    class="dropdown-item" id="hid2">What's Your Dream</a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item towna"
+                                    href="index.html#handleSearch3">Townhouse/Appartments</a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 2px;"
+                                    class="dropdown-item" id="buylan" href="index.html#handlesearch5">Land</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!-- <li><button class="item"> <a href="#">Sell</a> </button></li> -->
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                Sell
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem; padding: 1.5rem 0rem;  margin: 0.825rem 0 0; border-radius: 2px;">
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px; "
+                                    class="dropdown-item" href="#" id="s1">Recent Sales </a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item" href="#" id="s2">Property Appraisal</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li><button class="item"> <a href="contactus.html">Contact Us</a> </button></li>
+                    <li>
+                </ul>
+                <button type="button" id="test2" class="item btnst" style="margin-right: -120px;"><a href="#">Book a
+                        Free Appraisal</a></button>
+
+            </div>
+        </div>
+    </div>
+    <!-- land div -->
+
+    <!-- what are you looking for div -->
+    <div class="fill2">
+        <div class="fill-nav2">
+            <!-- <h2>R3 REALTORS</h2> -->
+            <h1>What Are You Looking For</h1>
+            <button class="crossbutton33">
+                <span class="cross one"></span>
+                <span class="cross two"></span>
+            </button>
+        </div>
+        <hr class="filterline" style="padding-bottom: 32px; width: 100%; color: #232323;">
+        <div class="overflow2">
+            <hr class="filterline">
+            <h1>Your Contact Details</h1>
+            <form id="appraisalForm" action="https://formspree.io/f/mrgwbjww" method="POST">
+                <label for="fullName" class="required">Enter your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="phoneNumber" class="required">Enter your Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="email" class="required">Enter your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="additionalDetails" style="margin-top: 31px;">Additional
+                    Details</label>
+                <textarea id="additionalDetails" name="additionalDetails"></textarea>
+
+                <h1 style="margin-top: 60px; margin-bottom: 40px;">Please Provide the below details</h1>
+
+                <!-- <label for="streetAddress" class="required">Street Address</label>
+                    <input type="text" id="streetAddress" name="streetAddress" required> -->
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="suburb" class="required">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" required>
+                    </div>
+                    <!-- <div style="flex: 1;">
+                            <label for="postcode" class="required">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" required>
+                        </div> -->
+                </div>
+                <label for="Budget" class="required">Budget</label>
+                <input type="text" id="Budget" name="Budget" required>
+
+                <label for="Size" class="required">Size of Land (in sq meters)</label>
+                <input type="text" id="size" name="Size" required>
+                <label for="estate">Estate</label>
+                <input type="text" name="esate" id="estate">
+
+                <div style="display: flex; margin-top: 20px; margin-bottom: 45px;">
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bedrooms" class="required">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bathrooms" class="required">Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="carspaces" class="required">Carspaces</label>
+                        <select id="carspaces" name="carspaces">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Submit Your Details</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="fillopen"></div>
+    <div class="fill1">
+        <div class="fill-nav1">
+            <!-- <h2>R3 REALTORS</h2> -->
+            <h1>Request An Appraisal</h1>
+            <button class="crossbutton23">
+                <span class="cross one"></span>
+                <span class="cross two"></span>
+            </button>
+        </div>
+        <hr class="filterline" style="padding-bottom: 32px; width: 100%; color: #232323;">
+        <div class="overflow1">
+            <hr class="filterline">
+            <h1>Your Contact Details</h1>
+            <form id="appraisalForm" action="https://formspree.io/f/mrgwbjww" method="POST">
+                <label for="fullName" class="required">Enter your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="phoneNumber" class="required">Enter your Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="email" class="required">Enter your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="additionalDetails" style="margin-top: 31px;">Additional
+                    Details</label>
+                <textarea id="additionalDetails" name="additionalDetails"></textarea>
+
+                <h1 style="margin-top: 60px; margin-bottom: 40px;">Property Details</h1>
+
+                <label for="streetAddress" class="required">Street Address</label>
+                <input type="text" id="streetAddress" name="streetAddress" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="suburb" class="required">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="postcode" class="required">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" required>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 20px; margin-bottom: 45px;">
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bedrooms" class="required">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bathrooms" class="required">Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="carspaces" class="required">Carspaces</label>
+                        <select id="carspaces" name="carspaces">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="propertyDetails" style="margin-top: 31px;">Additional Details</label>
+                <textarea id="propertyDetails" name="propertyDetails"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Book An Appraisal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="one1">
+        <div class="about-section" id="abts">
+            <h2>Contact</h2>
+            <h1 class="about-heading">R3 REALTORS</h1>
+        </div>
+
+        <div class="contact-section">
+            <div class="left-section">
+                <div class="contra">
+                    <h2 class="contact-heading">Contact Us</h2>
+                    <div class="contact-details">
+                        <p>Phone: <span class="sp" style="margin-left: 40px;">+61 449 666 333</span></p>
+                        <p>Email: <span class="sp" style="margin-left: 47px;"> rajjesh.p@r3realtors.com.au</span></p>
+                        <p>Address: <span class="sp">2 Souhail Court Berwick <span class="sp1">Victoria 3806
+                                </span>
+                            </span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="container">
+                    <form action="https://formspree.io/f/xyyqzorj" class="form-contact" id="frm1" method="POST">
+                        <!-- <h2>Subscribe To Get Our Daily Updates</h2> -->
+                        <input type="text" id="name" placeholder="Your Full Name" required name="name">
+                        <input type="email" id="email" placeholder="Your Email" required name="email">
+                        <input type="phone" id="phone" placeholder="Your Phone No." required name="phone">
+                        <textarea id="additionalDetails" placeholder="Additional Comments" name="additionalDetails"
+                            style="min-height: 8rem;"></textarea>
+                        <button type="submit" id="submit">Get In Touch</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <div></div>
+
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        let body = document.querySelector("body");
+        let fill1 = document.querySelector(".fill1");
+        let fill2 = document.querySelector(".fill2");
+        let fill3 = document.querySelector(".fill3");
+        let crossbokk = document.querySelector(".crossbutton23");
+        crossbokk.addEventListener('click', corsfn);
+        function corsfn(e) {
+            fill1.classList.remove("filtering");
+            // fillOverlay.classList.remove("overlay-fill");
+            body.classList.remove("stop-scrolling");
+        }
+        function cirsfun1() {
+            fill2.classList.remove("filtering");
+            // fillOverlay.classList.remove("overlay-fill");
+            body.classList.remove("stop-scrolling");
+        }
+        function cirsfun2() {
+            fill3.classList.remove("filtering");
+            // fillOverlay.classList.remove("overlay-fill");
+            body.classList.remove("stop-scrolling");
+        }
+        //cross fpr looking
+        let crosslook = document.querySelector(".crossbutton33")
+        crosslook.addEventListener('click', cirsfun1);
+
+
+        //cross end
+        let btnbook = document.getElementById("test2");
+        btnbook.addEventListener('click', fun22);
+        function fun22(e) {
+            console.log("hello1");
+            // fillOverlay.classList.toggle('overlay-fill');
+            fill1.classList.toggle("filtering");
+            // head.classList.toggle("remove-head");
+            body.classList.add("stop-scrolling");
+            // search2.classList.toggle("remove-search");
+        }
+        let hd2 = document.getElementById('hid2');
+        hd2.addEventListener('click', fu34);
+        function fu34(e) {
+            e.preventDefault();
+            fill2.classList.toggle("filtering");
+            // head.classList.toggle("remove-head");
+            body.classList.add("stop-scrolling");
+        }
+        let heya = document.getElementById("s2")
+        heya.addEventListener('click', fun22);
+
+    </script>
+
+</body>
+
+</html>

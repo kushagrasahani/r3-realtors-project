@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real Estate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&family=Inconsolata:wght@300&family=Open+Sans:ital@1&family=Raleway:ital,wght@1,800&family=Source+Serif+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Balsamiq Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Catamaran:wght@500&family=Inconsolata:wght@300&family=Josefin+Sans:wght@500&family=Lato&family=Montserrat:wght@600&family=Open+Sans:ital@1&family=Oswald&family=Raleway:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- prelaodar code -->
+    <div class="preloader"></div>
+    <div class="container-fluid bg-white">
+
+        <div class="wholebar">
+            <div class="navbar">
+                <!-- <button id="menu" class="menubutton">
+                    <span class="ham first"></span>
+                    <span class="ham second"></span>
+                    <span class="ham lastone"></span>
+                </button> -->
+
+                <a href="index.html"><img src="imgages copy/test19.png" class="logo"></a>
+
+                <ul class="navList">
+                    <li><button onclick="location.href='index.html'" class="item"> <a href="#">Home</a> </button></li>
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                About us
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem;height:160px; padding: 1.5rem 0rem;  margin: 0.825rem 0 0; border-radius: 2px;">
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px; "
+                                    class="dropdown-item" href="#aboubtUs">Why Us </a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item" href="teamsprev.html">Our Team</a>
+                                <!-- <a style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;"
+                                    class="dropdown-item" href="#rec1">Townhouse/Appartments</a> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                Buy
+                            </a>
+
+                            <div class="dropdown-menu dpmenu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem;height: 294px; padding: 1.5rem 0rem;    margin: -0.17500000000000004rem 0 0;; border-radius: 2px;">
+                                <a style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item all1">All</a>
+                                <a style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item resi">Residential</a>
+                                <a style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item hlan">House and Land</a>
+                                <a style="font-size: 13px; font-family: 'Montserrat', sans-serif; margin-bottom: 5px;margin-left: 15px;"
+                                    class="dropdown-item" id="hid1">What We have</a>
+                                <a style="font-size: 13px; font-family: 'Montserrat', sans-serif; margin-bottom: 5px; margin-left: 15px;"
+                                    class="dropdown-item" id="hid2">What's Your Dream</a>
+                                <a style="font-size: 16px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item towna">Townhouse/Appartments</a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px;"
+                                    class="dropdown-item" id="buylan">Land</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <!-- <li><button class="item"> <a href="#">Sell</a> </button></li> -->
+                    <li>
+                        <div class="dropdown show"
+                            style="margin-top: 24px; background: none; margin-right: 29px; margin-left: 1px; text-transform: capitalize;">
+                            <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="font-size: 18px; font-family: 'Montserrat', sans-serif;;">
+                                Sell
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="min-width: 17rem;height:160px; padding: 1.5rem 0rem;  margin: 0.825rem 0 0; border-radius: 2px;">
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 20px; "
+                                    class="dropdown-item" href="#" id="s1">Recent Sales </a>
+                                <a style="font-size: 17px; font-family: 'Montserrat', sans-serif; margin-bottom: 10px;"
+                                    class="dropdown-item" href="#" id="s2">Property Appraisal</a>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li><button class="item"> <a href="cntest.html">Contact Us</a> </button></li>
+                    <li>
+                </ul>
+                <button type="button" id="test2" class="item btnst" style="margin-right: -120px;"><a href="#">Book a
+                        Free Appraisal</a></button>
+
+            </div>
+        </div>
+    </div>
+    <!-- what are you looking for div -->
+    <div class="fill2">
+        <div class="fill-nav2">
+            <!-- <h2>R3 REALTORS</h2> -->
+            <h1>What Are You Looking For</h1>
+            <button class="crossbutton33">
+                <span class="cross one"></span>
+                <span class="cross two"></span>
+            </button>
+        </div>
+        <hr class="filterline" style="padding-bottom: 32px; width: 100%; color: #232323;">
+        <div class="overflow2">
+            <hr class="filterline">
+            <h1>Your Contact Details</h1>
+            <form id="appraisalForm" action="https://formspree.io/f/mrgwbjww" method="POST">
+                <label for="fullName" class="required">Enter your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="phoneNumber" class="required">Enter your Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="email" class="required">Enter your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="additionalDetails" style="margin-top: 31px;">Additional
+                    Details</label>
+                <textarea id="additionalDetails" name="additionalDetails"></textarea>
+
+                <h1>Please Provide the below details</h1>
+
+                <!-- <label for="streetAddress" class="required">Street Address</label>
+                    <input type="text" id="streetAddress" name="streetAddress" required> -->
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="suburb" class="required">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" required>
+                    </div>
+                </div>
+                <label for="Budget" class="required">Budget</label>
+                <input type="text" id="Budget" name="Budget" required>
+
+                <label for="Size" class="required">Size of Land (in m <sup>2</sup>)</label>
+                <input type="text" id="size" name="Size" required>
+                <label for="estate">Estate</label>
+                <input type="text" name="esate" id="estate">
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bedrooms" class="required">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bathrooms" class="required">Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="carspaces" class="required">Carspaces</label>
+                        <select id="carspaces" name="carspaces">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">Submit Your Details</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="fillopen"></div>
+    <div class="fill1">
+        <div class="fill-nav1">
+            <!-- <h2>R3 REALTORS</h2> -->
+            <h1>Request An Appraisal</h1>
+            <button class="crossbutton23">
+                <span class="cross one"></span>
+                <span class="cross two"></span>
+            </button>
+        </div>
+        <hr class="filterline" style="padding-bottom: 32px; width: 100%; color: #232323;">
+        <div class="overflow1">
+            <hr class="filterline">
+            <h1>Your Contact Details</h1>
+            <form id="appraisalForm" action="https://formspree.io/f/mrgwbjww" method="POST">
+                <label for="fullName" class="required">Enter your Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="phoneNumber" class="required">Enter your Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="email" class="required">Enter your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <label for="additionalDetails" style="margin-top: 31px;">Additional
+                    Details</label>
+                <textarea id="additionalDetails" name="additionalDetails"></textarea>
+
+                <h1>Property Details</h1>
+
+                <label for="streetAddress" class="required">Street Address</label>
+                <input type="text" id="streetAddress" name="streetAddress" required>
+
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 20px;">
+                        <label for="suburb" class="required">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="postcode" class="required">Postcode</label>
+                        <input type="text" id="postcode" name="postcode" required>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 20px;">
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bedrooms" class="required">Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; margin-right: 15px;">
+                        <label for="bathrooms" class="required">Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1;">
+                        <label for="carspaces" class="required">Carspaces</label>
+                        <select id="carspaces" name="carspaces">
+                            <option value="2" selected>2</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5</option>
+                            <option value="5+">6</option>
+                            <option value="5+">7</option>
+                            <option value="5+">8</option>
+                            <option value="5+">9</option>
+                            <option value="5+">10+</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="propertyDetails" style="margin-top: 31px;">Additional Details</label>
+                <textarea id="propertyDetails" name="propertyDetails"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Book An Appraisal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="middle container-fluid">
+        <div class="fill">
+            <div class="fill-nav">
+                <h2 class="heading">Filters</h2>
+                <button class="crossbutton2">
+                    <span class="cross one"></span>
+                    <span class="cross two"></span>
+                </button>
+            </div>
+            <hr class="filterline" style="padding-bottom: 20px;">
+            <div class="overflow">
+                <hr class="filterline">
+                <h2 class="heading2">Property type</h2>
+                <div class="combine-checkbox">
+
+                    <ul class="filter-checkboxes">
+                        <li class="check-list"><input type="radio" class="form-check-input" name="1" id="checkbox1"
+                                style=" border: 2px solid rgb(97, 95, 95); ">
+                            <label for="checkbox1" class="label">All types</label>
+                        </li>
+                        <li class="check-list"><input type="radio" name="1" class="form-check-input" id="checkbox2"
+                                style=" border: 2px solid rgb(97, 95, 95);">
+                            <label for="checkbox2" class="label"> Apartments</label>
+                        </li>
+                        <li class="check-list"><input type="radio" name="1" style=" border: 2px solid rgb(97, 95, 95);"
+                                class="form-check-input" id="checkbox3">
+                            <label for="checkbox3" class="label"> Villa</label>
+                        </li>
+                    </ul>
+                    <ul class="filter-checkboxes2">
+                        <li class="check-list"><input type="radio" name="1" class="form-check-input" id="checkbox6"
+                                style=" border: 2px solid rgb(97, 95, 95);">
+                            <label for="checkbox6" class="label">House</label>
+                        </li>
+                        <li class="check-list"><input type="radio" name="1" class="form-check-input" id="checkbox7"
+                                style=" border: 2px solid rgb(97, 95, 95);">
+                            <label for="checkbox7" class="label">Town</label>
+                        </li>
+                        <li class="check-list"><input type="radio" name="1" class="form-check-input" id="checkbox8"
+                                style=" border: 2px solid rgb(97, 95, 95);">
+                            <label for="checkbox8" class="label">Land</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pricing">
+                    <span class="heading2">Price</span>
+                    <div style="display: flex; flex-direction: row;">
+                        <label for="price" class="label2" style="font-size: 17px; font-weight: 500;">Min</label>
+                        <select id="price" class="form-select">
+                            <option selected="">Any</option>
+                            <option value="2">$50,000</option>
+                            <option value="3">$75,000</option>
+                            <option value="4">$100,000</option>
+                            <option value="5">$125,000</option>
+                        </select>
+                        <label for="price2" class="label2" style="font-size: 17px; font-weight: 500;">Max</label>
+                        <select id="price2" class="form-select">
+                            <option selected="">Any</option>
+                            <!-- <option value="1">ANY</option> -->
+                            <option value="8">$50,000</option>
+                            <option value="9">$75,000</option>
+                            <option value="10">$100,000</option>
+                            <option value="11">$125,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="pricing">
+                    <span class="heading2">Bedroom</span>
+                    <div style="display: flex; flex-direction: row;">
+                        <label for="bed" class="label2" style="font-size: 17px; font-weight: 500;">Min</label>
+                        <select id="bed" class="form-select">
+                            <option selected="">Any</option>
+                            <option value="14">studio</option>
+                            <option value="15">1</option>
+                            <option value="16">2</option>
+                            <option value="17">3</option>
+                        </select>
+                        <label for="bed2" class="label2" style="font-size: 17px; font-weight: 500;">Max</label>
+                        <select id="bed2" class="form-select">
+                            <option selected="">Any</option>
+                            <!-- <option value="1">ANY</option> -->
+                            <option value="20">studio</option>
+                            <option value="21">1</option>
+                            <option value="22">2</option>
+                            <option value="23">3</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span class="heading2">New or Established property</span>
+                    <div style="text-align: center;">
+                        <label for="new" class="label2" style="font-weight: 500;">New</label>
+                        <input type="checkbox" id="new" class="form-check-input" style="margin-right: 140px; ">
+                        <label for="establish" class="label2" style="font-weight: 500;">Establish</label>
+                        <input type="checkbox" id="establish" class="form-check-input">
+                    </div>
+                </div>
+                <div>
+                    <span class="heading2"> Keywords</span>
+                    <input type="search" placeholder="Air con,pool,garage,solar,ensuite" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="fill-overlay"></div>
+        <div class="fill">
+        </div>
+
+
+
+        <div class="search" id="tewn">
+            <div class="homeserch">
+                <div class="homefield">
+                    <select class="checkthem">
+                        <option value="0">All</option>
+                        <option value="1">House</option>
+                        <option value="2">Townhouse</option>
+                        <option value="3">Apartment</option>
+                        <option value="4">Land</option>
+                    </select>
+                </div>
+
+                <div class="combine">
+                    <div class="wrapper">
+                        <div class="search-input">
+                            <input type="text" placeholder="Type to search..">
+                            <div class="autocom-box" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="filter">Filters</button> -->
+                    <button id="red" type="submit">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Property List section start  -->
+    <h1 id="serviceP"></h1>
+    <section class="section rent container-fluid">
+        <div class="title">
+            <h1>Properties for Sale on R3 Realtors</h1>
+            <p>
+                Search over a range of properties available in Melbounre
+            </p>
+        </div>
+        <div class="rent-center container">
+            <!-- 1 -->
+            <div class="box fade-in" id="rec1">
+                <div class="top">
+
+                    <div class="overlay1" style="padding: 2.5px 1.1px; height: 15.8rem;">
+                        <img src="https://i2.au.reastatic.net/800x600-format=webp/425a7e463ff609573dcaf1244ca5d6056aa0b5a5104dbdb783976ef62e74991e/image.jpg"
+                            alt="">
+                    </div>
+                    <div class="pos" style="top:1.5rem;">
+                        <span id="chose1">Recently Listed</span>
+                        <!-- <span>Buy</span> -->
+                    </div>
+                </div>
+                <div class="bottom" style="margin-top:21px;">
+                    <p class="checkKar">
+                        House
+                    </p>
+                    <div>
+                        <span class="textCheck">51 ORBIS AVE, Fraser Rise, Vic 3336</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="box fade-in">
+                <div class="top">
+                    <div class="styleTwo">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic2_qwit2e.jpg" alt="">
+                    </div>
+                    <div class="pos">
+                        <!-- <span>Recently Listed</span> -->
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="checkKar">
+                        Townhouse
+                    </p>
+                    <div>
+                        <span class="textCheck">456 Johnson Road, Southbank, VIC 3006</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 3? -->
+            <div class="box fade-in">
+                <div class="top">
+                    <div class="styleTwo">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic3_cnn9pi.jpg" alt="">
+                    </div>
+                    <div class=" pos">
+                        <span>Recently Listed</span>
+                        <!-- <span>House And Land</span> -->
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="checkKar">
+                        House and Land
+                    </p>
+                    <div>
+                        <span class="textCheck"> 34 Spencer Street, West Melbourne, VIC 3003</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="box fade-in">
+                <div class="top">
+                    <div class="styleTwo">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic4_opvzsd.jpg" alt="">
+                    </div>
+                    <div class=" pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="checkKar">
+                        Apartment
+                    </p>
+                    <div>
+                        <span class="textCheck">89 Swanston Street, Carlton, VIC 3053</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="box fade-in">
+                <div class="top">
+                    <div class="styleTwo">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic5_nbdewd.jpg" alt="">
+                    </div>
+                    <div class=" pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="checkKar">
+                        House
+                    </p>
+                    <div>
+                        <span class="textCheck">78 St ORBIS AVE, VIC 3182</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="box fade-in">
+                <div class="top">
+                    <div class="styleTwo">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903510/Entrance_tcsekt.jpg"
+                            alt="">
+                    </div>
+                    <div class=" pos">
+                        <span>FEATURED</span>
+                        <span>BUY</span>
+
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="checkKar">
+                        Apartment
+                    </p>
+                    <div>
+                        <span class="textCheck">32 Collins Street, Fitzroy, VIC 3065</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="box fade-in">
+                <div class="top">
+
+                    <div class="overlay1" style="height: 14.9rem;
+                    padding: 22px 4px;">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic1_qxyo0i.jpg" alt="">
+                    </div>
+                    <div class="pos" style="top:2.7rem;">
+                        <!-- <span>Recently Listed</span> -->
+                        <span>Buy</span>
+                    </div>
+                </div>
+                <div class="bottom" style="margin-top:21px;">
+                    <p class="checkKar">
+                        House and Land
+                    </p>
+                    <div>
+                        <span class="textCheck">123 Smith Street, Melbourne, VIC 3000</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="box fade-in">
+                <div class="top">
+
+                    <div class="overlay1" style="height: 14.9rem;
+                    padding: 22px 4px;">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic1_qxyo0i.jpg" alt="">
+                    </div>
+                    <div class="pos" style="top:2.7rem;">
+                        <!-- <span>Recently Listed</span> -->
+                        <span>Buy (in m <sup>2</sup>)</span>
+                    </div>
+                </div>
+                <div class="bottom" style="margin-top:21px;">
+                    <p class="checkKar">
+                        Land
+                    </p>
+                    <div>
+                        <span class="textCheck">123 Smith Street, Melbourne, VIC 3000</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="box fade-in">
+                <div class="top">
+
+                    <div class="overlay1" style="height: 14.9rem;
+                    padding: 22px 4px;">
+                        <img src="https://res.cloudinary.com/dibdny5es/image/upload/v1684903723/pic1_qxyo0i.jpg" alt="">
+                    </div>
+                    <div class="pos" style="top:2.7rem;">
+                        <!-- <span>Recently Listed</span> -->
+                        <span>Buy (in m <sup>2</sup>)</span>
+                    </div>
+                </div>
+                <div class="bottom" style="margin-top:21px;">
+                    <p class="checkKar">
+                        Land
+                    </p>
+                    <div>
+                        <span class="textCheck">123 Smith Street, Melbourne, VIC 3000</span>
+                        <!-- <span><i class="far fa-eye"></i></span> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <h1 id="aboubtUs"></h1>
+    <div class="container-fluid py-5" style="background-color: white">
+        <div class="container-fluid">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-12 wow" data-wow-delay="0.1s">
+                    <h1 class="mb-4"
+                        style="text-align: center; margin-top: -49px;  font-family: 'Montserrat', sans-serif;">Sell with
+                        confidence.</h1>
+                    <h1 class="mb-4"
+                        style="text-align: center;margin-top: 10px; font-size: 22px;  font-family: 'Montserrat', sans-serif; font-weight: 400;">
+                        Let us bring our
+                        passion and skills and combine it with your
+                        support and let us get you the
+                        best result .
+                    </h1>
+                    <h1 class="mb-4"
+                        style="text-align: center;margin-top: -13px; font-size: 22px;  font-family: 'Montserrat', sans-serif; font-weight: 400;">
+                        <big style="font-size: 26px; font-weight: 700;"> At R3
+                            Realtors </big>, we know
+                        how to get the best value
+                        for
+                        your home
+                    </h1>
+                    <div class="about-img position-relative overflow-hidden img-fluid styleFour">
+                        <img class="image-fluid w-100 front-left slide-in" src="imgages copy/pic5 copy.jpeg"
+                            style="border-radius: 20px;">
+                    </div>
+                </div>
+                <div class="col-lg-12 wow front-right slide-in" data-wow-delay="0.5s">
+                    <p class="mb-4" style="text-align:center; font-size: 17px;"><i class="fa fa-check text-primary me-3"
+                            style="margin-left: 24px"></i>We
+                        understand that every client is unique, and our personalized approach ensures that we cater
+                        to individual preferences and requirements.</p>
+                    <p class="hideThem mb-4" style="text-align:center; font-size: 17px;"><i
+                            class="fa fa-check text-primary me-3" style="margin-left: 20px"></i>R3 Realtors
+                        streamlines the property selling process,
+                        making it efficient and convenient for clients from start to finish.</p>
+                    <p class="hideThem mb-4" style="text-align:center; font-size: 17px;"><i
+                            class="fa fa-check text-primary me-3" style="margin-left: 24px"></i>Our commitment to
+                        customer satisfaction is unwavering, and
+                        we strive to exceed expectations by delivering exceptional service and unparalleled value.
+                    </p>
+                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" style="margin-left: 24.5px" href="">Read More</a> -->
+                    <button type="button" onclick="showThem()" class="btn btn-primary py-3 px-5 mt-3 necheLeja"
+                        style="margin-left: 552px;" id="btnClick" href="">Show
+                        More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action Start -->
+    <h1 id="contactUs"></h1>
+    <div class="book-overlay"></div>
+    <div class="container-fluid pt-3 pb-3"
+        style="background-image:url(imgages\ copy/design2.png); padding-left: 0; padding-right: 0; ">
+        <div class="container-fluid">
+            <div class="p-3 container-fluid">
+                <div class="bg-white rounded p-4">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="rounded w-100" src="imgages copy/rjupdatenew1.png" alt="">
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="mb-4">
+                                <h1 class="mb-3">Contact With Our Principal Agent</h1>
+                                <p>Our principal agent is your dedicated point of contact throughout your real
+                                    estate journey. With their extensive expertise and deep understanding of the
+                                    market, they are committed to delivering exceptional service and ensuring your
+                                    property needs are met. .</p>
+                            </div>
+
+                            <button class="btn btn-outline-warning py-3 px-4 me-2 callingUs"><i
+                                    class="fa fa-phone-alt me-2"></i>Make A
+                                Call</button>
+                            <button class="btn btn-outline-info py-3 appoint">
+                                <i class="fa fa-calendar-alt me-2"></i>Get
+                                Appoinment</button>
+
+                            <div class="book-overlay"></div>
+                            <div id="calling" class="remove" style="transition: all ease-in 1s;">
+                                <button type="button" class="btn btn-danger close">Close</button>
+                                <p>.</p>
+                                <p class="phoneNumber">
+                                    <Span class="phone1"><i style="color:rgb(54, 182, 54);font-size: 20px;"
+                                            class="fa fa-phone-square " aria-hidden="true">+61 449 666 333
+                                        </i></Span>
+                                    <!-- <span class="phone2"><i style="color:rgb(54, 182, 54);"
+                                                class="fa fa-phone-square " aria-hidden="true"> 9958111014</i></span> -->
+                                </p>
+                                <p class="defination">We love our customers and they can reach us any time of the
+                                    day,We will be at your service 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action End -->
+    <h1 id="connect"></h1>
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About R3 Realtors</h2>
+            <p>R3 Realtors is a leading real estate agency dedicated to providing exceptional service and expertise
+                to our clients. With years of experience in the industry, we have established ourselves as a trusted
+                name in the market. Our team of professionals is passionate about helping individuals and families
+                find their dream homes or make profitable real estate investments.</p>
+        </div>
+        <div class="team-button">
+            <a href="teamsprev.html" class="btn">Meet the Team <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Team End -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6 padd">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2 Souhail Court Berwick, Victoria 3806</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+61 449 666 333</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i> rajjesh.p@r3realtors.com.au</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-youtube"></i></a> -->
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="teamsprev.html">About Us</a>
+                    <a class="btn btn-link " href="contactus.html">Contact Us</a>
+                    <!-- <a class="btn btn-link" href="#serviceP">Our Services</a> -->
+                    <!-- <a class="btn btn-link" href="">Privacy Policy</a> -->
+                    <a class="btn btn-link" href="teamsprev.html">Our Team</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Buy</h5>
+                    <a class="btn btn-link" href="index.html#handlesearch4">All</a>
+                    <a class="btn btn-link" href="index.html#handleSearch1">Residential</a>
+                    <a class="btn btn-link " href="#">House and Land</a>
+                    <a class="btn btn-link " href="index.html#handleSearch2"
+                        style="margin-left: 15px; font-size: 14px;">What We
+                        have</a>
+                    <a class="btn btn-link " href="index.html#fu34" style="margin-left: 15px; font-size: 14px;">What's
+                        Your Dream</a>
+                    <a class="btn btn-link" href="index.html#handleSearch3">Townhouse/Apartment</a>
+                    <a class="btn btn-link" href="index.html#handlesearch5">Land</a>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Sell</h5>
+                    <a class="btn btn-link" href="#">Recent Sales</a>
+                    <a class="btn btn-link " href="#index.html#fun22">Property Appraisal</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="bottom" href="#" style="color: aliceblue;" href="index.html">R3 Realtors
+                        </a>, All
+                        Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    </div>
+
+    <!-- Property list  -->
+
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="realestate.js"></script>
+</body>
+
+</html>
